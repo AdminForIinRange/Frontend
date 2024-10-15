@@ -1,0 +1,35 @@
+{
+  "name": "frontend",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "prettier": "prettier --write \"**/*.{js,jsx,json,md}\"",
+    "pretty-check": "prettier --check \"**/*.{js,jsx,json,md}\""
+  },
+  "dependencies": {
+    "@chakra-ui/next-js": "^2.2.0",
+    "@chakra-ui/react": "^2.8.2",
+    "@emotion/react": "^11.11.4",
+    "@emotion/styled": "^11.11.5",
+    "animate.css": "^4.1.1",
+    "aos": "^2.3.4",
+    "chart.js": "^4.4.3",
+    "framer-motion": "^11.2.12",
+    "next": "14.2.4",
+    "prettier": "^3.3.2",
+    "react": "^18",
+    "react-apexcharts": "^1.4.1",
+    "react-chartjs-2": "^5.2.0",
+    "react-dom": "^18",
+    "react-icons": "^5.2.1",
+    "recharts": "^2.12.7"
+  },
+  "devDependencies": {
+    "eslint": "^8",
+    "eslint-config-next": "14.2.4"
+  }
+}
