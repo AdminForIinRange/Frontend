@@ -75,6 +75,22 @@ const Navbar = ({ setRent, rent }) => {
       },
       speicals: true,
     },
+    {
+      name: "Join Us",
+      link: "",
+      onClick: () => {
+        isOpen ? onClose() : onOpen();
+      },
+      speicals: true,
+    },
+    {
+      name: "Login",
+      link: "",
+      onClick: () => {
+        isOpen ? onClose() : onOpen();
+      },
+      speicals: true,
+    },
   ];
 
   const style = {};
@@ -84,7 +100,6 @@ const Navbar = ({ setRent, rent }) => {
       {isTablet ? (
         <Box>
           <HStack
-        
             zIndex={"5"}
             position={"fixed"}
             justify={"space-between"}
@@ -94,7 +109,7 @@ const Navbar = ({ setRent, rent }) => {
           >
             <HStack w={"100%"} h={"100%"} justify={"left"} align={"start"}>
               {" "}
-              <Box    w={["50px", "50px", "50px", "50px", "50px", "50px"]}>
+              <Box w={["50px", "50px", "50px", "50px", "50px", "50px"]}>
                 <a href="/airbnb">
                   {" "}
                   <Image
@@ -180,17 +195,13 @@ const Navbar = ({ setRent, rent }) => {
                   fontFamily={"Poppins"}
                   px={["2", "2", "5", "5", "5"]}
                 >
-                  <Box mr={"100px"}
-   
+                  <Box
+                    mr={"100px"}
                     w={["50px", "50px", "50px", "50px", "50px", "50px"]}
                   >
                     <a href="/airbnb">
                       {" "}
-                      <Image
-                        src={UPC_logo_Trans}
-                        width={"100%"}
-                        alt="logo"
-                      />
+                      <Image src={UPC_logo_Trans} width={"100%"} alt="logo" />
                     </a>
                   </Box>
 
@@ -206,14 +217,24 @@ const Navbar = ({ setRent, rent }) => {
                           "flex",
                         ]}
                         color={"white"}
-                        border={"1px solid #666666"}
+                        // border={"1px solid #666666"}
                         rounded={"15px"}
                         px={[5, 5, 5, 5, 5, 5]}
                         py={[2, 2, 2, 2, 2, 2]}
                         animation={" all 0.3s ease-in-out"}
                         _hover={{
                           bg: "black",
-                          color: speicals ? "#5E51ED" : "#7EB8F1",
+                          color: speicals
+                            ? name === "Join Us"
+                              ? "#FFC107"
+                              : name === "Login"
+                                ? "#2FC107"
+                                : name === "FAQ"
+                                  ? "#4B8CF9"
+                                  : name === "Contact"
+                                    ? "#FF69B4"
+                                    : "#7EB8F1"
+                            : "#7EB8F1",
                           cursor: "pointer",
                         }}
                         key={index}
@@ -222,7 +243,17 @@ const Navbar = ({ setRent, rent }) => {
                         onClick={onClick}
                         bgClip={speicals ? "text" : "none"}
                         bgGradient={
-                          speicals ? "linear(to-r, red, blue)" : "none"
+                          speicals
+                            ? name === "Join Us"
+                              ? "linear(to-r, blue, yellow)"
+                              : name === "Login"
+                                ? "linear(to-r, pink, green)"
+                                : name === "FAQ"
+                                  ? "linear(to-r, green, blue)"
+                                  : name === "Contact"
+                                    ? "linear(to-r, yellow, pink)"
+                                    : "none"
+                            : "none"
                         }
                       >
                         <Text
