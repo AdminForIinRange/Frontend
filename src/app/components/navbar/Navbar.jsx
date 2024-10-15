@@ -154,7 +154,7 @@ const Navbar = ({ setRent, rent }) => {
         <Box>
           <HStack
             mt={"5px"}
-            mb={"16.5px"}
+            mb={"106.5px"}
             w={"100%"}
             zIndex={"5"}
             position={"fixed"}
@@ -193,10 +193,10 @@ const Navbar = ({ setRent, rent }) => {
                   justify={"start"}
                   align={"start"}
                   fontFamily={"Poppins"}
-                  px={["2", "2", "5", "5", "5"]}
+                  
                 >
                   <Box
-                    mr={"100px"}
+                    mr={"25px"}
                     w={["50px", "50px", "50px", "50px", "50px", "50px"]}
                   >
                     <a href="/airbnb">
@@ -219,7 +219,7 @@ const Navbar = ({ setRent, rent }) => {
                         color={"white"}
                         // border={"1px solid #666666"}
                         rounded={"15px"}
-                        px={[5, 5, 5, 5, 5, 5]}
+                        px={[3, 3, 3, 3, 3, 3]}
                         py={[2, 2, 2, 2, 2, 2]}
                         animation={" all 0.3s ease-in-out"}
                         _hover={{
