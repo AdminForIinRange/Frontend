@@ -1,11 +1,11 @@
-import { Box, VStack, Text, HStack, Icon, } from "@chakra-ui/react";
+import { Box, VStack, Text, HStack, Icon } from "@chakra-ui/react";
 import React from "react";
 import { GoTriangleRight } from "react-icons/go";
 import Spark from "../../../../img/svg/Spark.svg";
 
 import Hackathon from "../../../../img/png/Hackathon.jpg";
 import backgroundGradient from "../../../../img/png/backgroundGradient.png";
-
+import { GoArrowUpRight } from "react-icons/go";
 import Image from "next/image";
 
 const InitialLanding = () => {
@@ -17,7 +17,7 @@ const InitialLanding = () => {
           align={"start"}
           w={"100%"}
           h={"100%"}
-        //   border={"1px solid red"}
+          //   border={"1px solid red"}
         >
           <VStack
             // border={"1px solid blue"}
@@ -163,7 +163,7 @@ const InitialLanding = () => {
           </VStack>
 
           <VStack
-          mt={"30px"}
+            mt={"30px"}
             // border={"1px solid red"}
             align={"start"}
             justify={"start"}
@@ -199,7 +199,69 @@ const InitialLanding = () => {
                 rounded={"24px"}
                 border={"1px solid #666666"}
                 p={"20px"}
-              ></Box>
+              >
+                <HStack justify={"space-between"} align={"start"} w={"100%"}>
+                  {" "}
+                  <Text
+                    fontSize={["22px", "22px", "22px", "22px", "22px", "22px"]}
+                    fontWeight={600}
+                    textAlign={"left"}
+                    fontFamily={"Poppins"}
+                    bgClip="text" // Clip the background to the text
+                    className="animate__animated animate__fadeInDown"
+                    data-aos="fade-down"
+                    color={"white"} // Adding white outline effect
+                    bgGradient="linear(to-r, green, red)"
+                    // textShadow={"0px 0px 5px white"}
+                    as={"span"}
+                  >
+                    Member's
+                  </Text>
+                  <Text
+                    transition={"all 0.5s ease"}
+                    _hover={{ cursor: "pointer", transform: "rotate(360deg)" }}
+                    bg={"#62E2E9"}
+                    rounded={"full"}
+                    p={2}
+                    color={"black"}
+                    fontSize={["22px", "22px", "22px", "22px", "22px", "22px"]}
+                  >
+                    <GoArrowUpRight />
+                  </Text>
+                </HStack>
+
+                <HStack
+                  justify={"start"}
+                  align={"center"}
+                  w={"100%"}
+                  h={"100%"}
+                >
+                  <Text
+                    fontSize={["22px", "22px", "22px", "22px", "22px", "52px"]}
+                    fontWeight={300}
+                    textAlign={"left"}
+                    fontFamily={"Poppins"}
+                    bgClip="text" // Clip the background to the text
+                    className="animate__animated animate__fadeInDown"
+                    data-aos="fade-down"
+                    color={"white"} // Adding white outline effect
+                  >
+                    100+
+                  </Text>
+                  <Text
+                    fontSize={["22px", "22px", "22px", "22px", "22px", "22px"]}
+                    fontWeight={200}
+                    textAlign={"left"}
+                    fontFamily={"Poppins"}
+                    bgClip="text" // Clip the background to the text
+                    className="animate__animated animate__fadeInDown"
+                    data-aos="fade-down"
+                    color={"white"} // Adding white outline effect
+                  >
+                    Something
+                  </Text>
+                </HStack>
+              </Box>
               <Box
                 w={"100%"}
                 h={"150px"}
@@ -207,7 +269,69 @@ const InitialLanding = () => {
                 rounded={"24px"}
                 border={"1px solid #666666"}
                 p={"20px"}
-              ></Box>
+              >
+                <HStack justify={"space-between"} align={"start"} w={"100%"}>
+                  {" "}
+                  <Text
+                    fontSize={["22px", "22px", "22px", "22px", "22px", "22px"]}
+                    fontWeight={600}
+                    textAlign={"left"}
+                    fontFamily={"Poppins"}
+                    bgClip="text" // Clip the background to the text
+                    className="animate__animated animate__fadeInDown"
+                    data-aos="fade-down"
+                    color={"white"} // Adding white outline effect
+                    bgGradient="linear(to-r, green, red)"
+                    // textShadow={"0px 0px 5px white"}
+                    as={"span"}
+                  >
+                    Contruabtion's
+                  </Text>
+                  <Text
+                    transition={"all 0.5s ease"}
+                    _hover={{ cursor: "pointer", transform: "rotate(360deg)" }}
+                    bg={"#0752EA"}
+                    rounded={"full"}
+                    p={2}
+                    color={"black"}
+                    fontSize={["22px", "22px", "22px", "22px", "22px", "22px"]}
+                  >
+                    <GoArrowUpRight />
+                  </Text>{" "}
+                </HStack>
+
+                <HStack
+                  justify={"start"}
+                  align={"center"}
+                  w={"100%"}
+                  h={"100%"}
+                >
+                  <Text
+                    fontSize={["22px", "22px", "22px", "22px", "22px", "52px"]}
+                    fontWeight={300}
+                    textAlign={"left"}
+                    fontFamily={"Poppins"}
+                    bgClip="text" // Clip the background to the text
+                    className="animate__animated animate__fadeInDown"
+                    data-aos="fade-down"
+                    color={"white"} // Adding white outline effect
+                  >
+                    100+
+                  </Text>
+                  <Text
+                    fontSize={["22px", "22px", "22px", "22px", "22px", "22px"]}
+                    fontWeight={200}
+                    textAlign={"left"}
+                    fontFamily={"Poppins"}
+                    bgClip="text" // Clip the background to the text
+                    className="animate__animated animate__fadeInDown"
+                    data-aos="fade-down"
+                    color={"white"} // Adding white outline effect
+                  >
+                    Something
+                  </Text>
+                </HStack>
+              </Box>
             </HStack>
           </VStack>
         </HStack>
