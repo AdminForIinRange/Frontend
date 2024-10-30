@@ -7,7 +7,7 @@ import onePieceOFbackground from "../img/svg/onePieceOFbackground.svg";
 export default function Home() {
   return (
     <>
-      <Box mx={["0px", "0px", "60px", "60px", "120px", "120px"]}>
+      <Box mx={["10px", "15px", "60px", "60px", "120px", "120px"]}>
         <Navbar />
         <InitialLanding />
       </Box>

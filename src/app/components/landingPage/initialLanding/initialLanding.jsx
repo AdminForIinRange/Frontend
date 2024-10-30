@@ -17,6 +17,7 @@ const InitialLanding = () => {
           align={"start"}
           w={"100%"}
           h={"100%"}
+          wrap={["wrap", "wrap", "wrap", "nowrap", "nowrap", "nowrap"]}
           //   border={"1px solid red"}
         >
           <VStack
@@ -28,22 +29,22 @@ const InitialLanding = () => {
           >
             <VStack
               mt={"100px"}
-              lineHeight={["50px", "50px", "75px", "95px", "95px", "95px"]}
+              lineHeight={["65px", "65px", "75px", "75px", "95px", "95px"]}
               letterSpacing={"0px"}
               w={"100%"}
               justify={"left"}
               align={"left"}
               gap={"0px"}
             >
-              <HStack justify={"space-between"} align={"start"}>
+              <HStack justify={"center"} align={"start"}>
                 <HStack
                   //   data-aos="fade-up"
                   w={"100%"}
                   justify={[
                     "center",
                     "center",
-                    "start",
-                    "start",
+                    "center",
+                    "center",
                     "start",
                     "start",
                   ]}
@@ -93,9 +94,16 @@ const InitialLanding = () => {
               </HStack>
 
               <Text
-                fontSize={["30px", "30px", "35px", "45px", "65px", "95px"]}
+                fontSize={["55px", "75px", "75px", "65px", "65px", "95px"]}
                 fontWeight={600}
-                textAlign={"left"}
+                textAlign={[
+                  "center",
+                  "center",
+                  "center",
+                  "left",
+                  "left",
+                  "left",
+                ]}
                 fontFamily={"Poppins"}
                 bgClip="text" // Clip the background to the text
                 className="animate__animated animate__fadeInDown"
@@ -109,9 +117,16 @@ const InitialLanding = () => {
               </Text>
 
               <Text
-                fontSize={["30px", "30px", "35px", "45px", "65px", "95px"]}
+                fontSize={["55px", "75px", "75px", "65px", "65px", "95px"]}
                 fontWeight={600}
-                textAlign={"left"}
+                textAlign={[
+                  "center",
+                  "center",
+                  "center",
+                  "left",
+                  "left",
+                  "left",
+                ]}
                 fontFamily={"Poppins"}
                 bgClip="text" // Clip the background to the text
                 className="animate__animated animate__fadeInDown"
@@ -124,30 +139,36 @@ const InitialLanding = () => {
                 Collaborate,
               </Text>
 
-              <HStack justify={"left"} align={"end"}>
-                <Text
-                  fontSize={["30px", "30px", "35px", "45px", "65px", "95px"]}
-                  fontWeight={600}
-                  textAlign={"left"}
-                  fontFamily={"Poppins"}
-                  bgClip="text" // Clip the background to the text
-                  className="animate__animated animate__fadeInDown"
-                  data-aos="fade-down"
-                  color={"white"} // Adding white outline effect
-                  bgGradient="linear(to-r, green, red)"
-                  // textShadow={"0px 0px 5px white"}
-                  as={"span"}
-                >
-                  Code Your Future
-                </Text>
-              </HStack>
+              <Text
+                fontSize={["55px", "75px", "75px", "65px", "65px", "95px"]}
+                fontWeight={600}
+                textAlign={[
+                  "center",
+                  "center",
+                  "center",
+                  "left",
+                  "left",
+                  "left",
+                ]}
+                fontFamily={"Poppins"}
+                bgClip="text" // Clip the background to the text
+                className="animate__animated animate__fadeInDown"
+                data-aos="fade-down"
+                color={"white"} // Adding white outline effect
+                bgGradient="linear(to-r, green, red)"
+                // textShadow={"0px 0px 5px white"}
+                as={"span"}
+              >
+                Code Your Future
+              </Text>
             </VStack>
 
             <Text
-              mt={"50px"}
-              fontSize={["30px", "30px", "35px", "45px", "65px", "24px"]}
+              w={["100%", "100%", "90%", "90%", "80%", "80%"]}
+              mt={["25px", "25px", "25px", "50px", "50px", "50px"]}
+              fontSize={["20px", "20px", "24px", "24px", "24px", "24px"]}
               fontWeight={300}
-              textAlign={"left"}
+              textAlign={["center", "center", "center", "left", "left", "left"]}
               fontFamily={"Poppins"}
               bgClip="text" // Clip the background to the text
               className="animate__animated animate__fadeInDown"
@@ -172,11 +193,11 @@ const InitialLanding = () => {
           >
             <Box
               w={"100%"}
-              h={"600px"}
+              h={["400px", "400px", "450px", "600px", "600px", "600px"]}
               bg={"rgba(30,30,35, 0.5)"}
               rounded={"24px"}
               border={"1px solid #666666"}
-              p={"20px"}
+              p={["10px", "10px", "10px", "20px", "20px", "20px"]}
             >
               {" "}
               <Box
@@ -191,7 +212,13 @@ const InitialLanding = () => {
                 }}
               ></Box>
             </Box>
-            <HStack justify={"center"} align={"center"} w={"100%"} h={"100%"}>
+            <HStack
+              wrap={["wrap", "wrap", "wrap", "nowrap", "nowrap", "nowrap"]}
+              justify={"center"}
+              align={"center"}
+              w={"100%"}
+              h={"100%"}
+            >
               <Box
                 w={"100%"}
                 h={"150px"}
@@ -343,9 +370,24 @@ const InitialLanding = () => {
         align={"center"}
         px={"5px"}
         position={"absolute"}
-        top={["140px", "125px", "125px", "75px", "75px", "75px"]}
+        top={["500px", "300px", "250px", "75px", "75px", "75px"]}
         zIndex={"-1"}
-        left={800}
+        left={["0", "0", "0", "800", "800", "800"]}
+        right={0}
+        transform={"rotate(0deg)"}
+      >
+        <Image src={backgroundGradient} alt="BackGround" />
+      </HStack>
+
+      <HStack
+        className="animate__animated animate__fadeIn"
+        justify={"center"}
+        align={"center"}
+        px={"5px"}
+        position={"absolute"}
+        top={["700px", "700px", "700px", "75px", "75px", "75px"]}
+        zIndex={"-1"}
+        left={["0", "0", "0", "800", "800", "800"]}
         right={0}
       >
         <Image src={backgroundGradient} alt="BackGround" />
