@@ -6,6 +6,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 const inter = Inter({ subsets: ["latin"] });
 import { ChakraProvider } from "@chakra-ui/react";
+import { Analytics } from "@vercel/analytics/react";
 
 export const metadata = {
   title: {
@@ -44,6 +45,7 @@ export default function RootLayout({ children }) {
       </head>
       <body className="RootLayout" style={{ backgroundColor: "#131314", fontFamily: "Poppins" }}>
         <ChakraProvider>{children}</ChakraProvider>
+        <Analytics />
       </body>
     </html>
   );
