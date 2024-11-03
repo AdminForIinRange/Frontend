@@ -159,7 +159,7 @@ const Navbar = ({ setRent, rent }) => {
             zIndex={"5"}
             position={"fixed"}
             justify={"start"}
-            align={"start"}
+            align={"center"}
           >
             <HStack
               transition={"all 0.3s ease-in-out"}
@@ -170,7 +170,7 @@ const Navbar = ({ setRent, rent }) => {
               }
               h={"100%"}
               justify={"start"}
-              align={"start"}
+              align={"center"}
               mt={"24.5px"}
               mb={"16.5px"}
               _hover={{
@@ -180,20 +180,22 @@ const Navbar = ({ setRent, rent }) => {
               <Box
                 rounded={"15px"}
                 transition={"all 0.5s ease-in-out"}
-                w={"100%"}
                 _hover={{
                   h: "65",
                 }}
                 h={"60px"}
               >
                 <HStack
+                  rounded={"24px"}
+                  border={"1px solid #666666"}
+                  bg={"rgba(30,30,35, 0.5)"}
                   // bg={"white"}
+                  p={"20px"}
                   w={"100%"}
                   h={"100%"}
-                  justify={"start"}
-                  align={"start"}
+                  justify={"center"}
+                  align={"center"}
                   fontFamily={"Poppins"}
-                  
                 >
                   <Box
                     mr={"25px"}
