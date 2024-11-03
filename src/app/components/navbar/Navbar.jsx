@@ -154,11 +154,19 @@ const Navbar = ({ setRent, rent }) => {
           </HStack>
         </Box>
       ) : (
-        <Box px={["0px", "0px", "0px", "0px",  "120px", "120px"]}>
+        <Box px={["0px", "0px", "0px", "0px", "120px", "120px"]}>
           <HStack
-          transform={yValue ? "translateX(50%)" : "translateX(0%)"}
-          transition={"all 0.5s ease-in-out"}
-     
+            transform={[
+              yValue ? "translateX(0%)" : "translateX(0%)",
+              yValue ? "translateX(0%)" : "translateX(0%)",
+              yValue ? "translateX(0%)" : "translateX(0%)",
+              yValue ? "translateX(0%)" : "translateX(0%)",
+              yValue ? "translateX(25%)" : "translateX(0%)",
+              yValue ? "translateX(50%)" : "translateX(0%)",
+              yValue ? "translateX(50%)" : "translateX(0%)",
+            ]}
+            transition={"all 0.5s ease-in-out"}
+           w={["100%", "100%", "100%", "100%", "765px", "825px"]}
             mt={"5px"}
             mb={"106.5px"}
             zIndex={"5"}
@@ -174,7 +182,6 @@ const Navbar = ({ setRent, rent }) => {
             align={"center"}
           >
             <HStack
-            
               transition={"all 0.3s ease-in-out"}
               h={"100%"}
               justify={[
@@ -200,18 +207,15 @@ const Navbar = ({ setRent, rent }) => {
                 }}
                 h={"60px"}
               >
-                <HStack 
-                transition={"all 0.5s ease-in-out"}
+                <HStack
+                  transition={"all 0.5s ease-in-out"}
                   rounded={"24px"}
                   border={"1px solid #666666"}
                   bg={"rgba(30,30,35, 0.5)"}
                   backdropFilter="blur(2.5px)"
                   w={
-                    yValue
-                      ? ["95%", "95%", "95%", "90%", "90%", "100%"]
-                      : ["90%", "90%", "90%", "80%", "80%", "100%"]
+                  "100%"
                   }
-
                   boxShadow={"rgba(0, 0, 0, 0.05) 0px 0px 10px"}
                   // bg={"white"}
                   p={"30px"}
