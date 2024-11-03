@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <>
      <Navbar />
-      <Box px={["10px", "15px", "60px", "60px", "120px", "120px"]}>
+      <Box  px={["10px", "15px", "60px", "60px", "120px", "120px"]}>
        
         <InitialLanding />
       </Box>

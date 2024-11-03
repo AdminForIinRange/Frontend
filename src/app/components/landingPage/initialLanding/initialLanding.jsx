@@ -11,8 +11,8 @@ import Image from "next/image";
 const InitialLanding = () => {
   return (
     <>
-      <Box>
-        <HStack
+      <Box >
+        <HStack 
           justify={"start"}
           align={"start"}
           w={"100%"}
@@ -20,7 +20,7 @@ const InitialLanding = () => {
           wrap={["wrap", "wrap", "wrap", "nowrap", "nowrap", "nowrap"]}
           //   border={"1px solid red"}
         >
-          <VStack
+          <VStack mt={"50px"}
             // border={"1px solid blue"}
             align={"start"}
             justify={"start"}
@@ -183,8 +183,8 @@ const InitialLanding = () => {
             </Text>
           </VStack>
 
-          <VStack
-            mt={"30px"}
+          <VStack mt={"30px"}
+      
             // border={"1px solid red"}
             align={"start"}
             justify={"start"}

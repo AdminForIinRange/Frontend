@@ -55,6 +55,10 @@ const Navbar = ({ setRent, rent }) => {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
+  }, []);
+
+  useEffect(() => {
+    console.log("yValue updated:", yValue);
   }, [yValue]);
 
   const links = [
@@ -93,7 +97,6 @@ const Navbar = ({ setRent, rent }) => {
     },
   ];
 
-  const style = {};
   return (
     <>
       {/* Mobile Navbar */}
@@ -151,23 +154,37 @@ const Navbar = ({ setRent, rent }) => {
           </HStack>
         </Box>
       ) : (
-        <Box  px={["0px", "0px", "0px", "0px", "120px", "120px"]}>
+        <Box px={["0px", "0px", "0px", "0px",  "120px", "120px"]}>
           <HStack
+          transform={yValue ? "translateX(50%)" : "translateX(0%)"}
+          transition={"all 0.5s ease-in-out"}
+     
             mt={"5px"}
             mb={"106.5px"}
-            w={"100%"}
             zIndex={"5"}
-        position={"fixed"}    
-            justify={["center", "center", "center", "center", "start", "start"]}
+            position={"fixed"}
+            justify={[
+              "center",
+              "center",
+              "center",
+              "center",
+              "center",
+              "center",
+            ]}
             align={"center"}
           >
             <HStack
+            
               transition={"all 0.3s ease-in-out"}
-              w={
-               "100%"
-              }
               h={"100%"}
-              justify={["center", "center", "center", "center", "start", "start"]}
+              justify={[
+                "center",
+                "center",
+                "center",
+                "center",
+                "center",
+                "center",
+              ]}
               align={"center"}
               mt={"24.5px"}
               mb={"16.5px"}
@@ -183,17 +200,21 @@ const Navbar = ({ setRent, rent }) => {
                 }}
                 h={"60px"}
               >
-                <HStack
+                <HStack 
+                transition={"all 0.5s ease-in-out"}
                   rounded={"24px"}
                   border={"1px solid #666666"}
                   bg={"rgba(30,30,35, 0.5)"}
                   backdropFilter="blur(2.5px)"
+                  w={
+                    yValue
+                      ? ["95%", "95%", "95%", "90%", "90%", "100%"]
+                      : ["90%", "90%", "90%", "80%", "80%", "100%"]
+                  }
 
-                 
                   boxShadow={"rgba(0, 0, 0, 0.05) 0px 0px 10px"}
                   // bg={"white"}
-                  p={"20px"}
-                  w={"100%"}
+                  p={"30px"}
                   h={"100%"}
                   justify={"center"}
                   align={"center"}
