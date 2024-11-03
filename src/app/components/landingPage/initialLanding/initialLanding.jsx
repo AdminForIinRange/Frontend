@@ -44,7 +44,7 @@ const InitialLanding = () => {
                     "center",
                     "center",
                     "center",
-                    "center",
+                    "start",
                     "start",
                     "start",
                   ]}
